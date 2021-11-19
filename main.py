@@ -53,7 +53,7 @@ def scrape(url, longitude, latitude, timezone):
 
 
 @app.get("/")
-async def crawl(url: str, longitude: float=57, latitude: float=10, timezone: str='+00:00' ):
+async def crawl(url: str, longitude: float=10, latitude: float=57, timezone: str='+00:00' ):
     """- Kun nødvendigt at give en event URL, altså fx til [her](https://in-the-sky.org/news.php?id=20211103_19_100). \n
        - Resten kan man indstille valgfrit, hvis man har ondt i numsen over defaults. \n
        - `timezone` er vist med offset i GMT/UTC(?)"""
